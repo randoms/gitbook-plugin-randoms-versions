@@ -1,0 +1,42 @@
+{
+  "dependencies": {
+    "shelljs": "^0.8.2"
+  },
+  "description": "Display a <select> with other versions of your gitbook. Forked from gitbook-plugin-version",
+  "devDependencies": {
+    "eslint": "^2.7.0"
+  },
+  "directories": {},
+  "engines": {
+    "gitbook": ">=2.6.2"
+  },
+  "gitbook": {
+    "properties": {
+      "includeFilepath": {
+        "description": "True to insert current filepath at the end of the version url",
+        "type": "boolean"
+      },
+      "type": {
+        "default": "branches",
+        "enum": [
+          "branches",
+          "tags",
+          "languages"
+        ],
+        "type": "string"
+      }
+    }
+  },
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "randoms@bwbot.org",
+      "name": "randoms"
+    }
+  ],
+  "name": "gitbook-plugin-randoms-versions",
+  "optionalDependencies": {},
+  "scripts": {},
+  "version": "1.0.3"
+}
